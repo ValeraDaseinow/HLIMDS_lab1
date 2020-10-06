@@ -19,7 +19,7 @@ gesture_names = {-1: 'Unknown',
                  1: 'F',
                  2: 'W'}
 
-model = keras.models.load_model(r'C:\intelFPGA_lite\17.0\HLIMDS\Lab1\my_model')
+model = keras.models.load_model(r'C:\intelFPGA_lite\17.0\HLIMDS\Lab1\my_model.h5')
 
 def remove_background(frame):
     fgmask = bgModel.apply(frame, learningRate=learningRate)
